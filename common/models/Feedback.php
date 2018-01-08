@@ -21,19 +21,9 @@ class Feedback extends \yii\db\ActiveRecord {
                 'contacts',
                 'theme',
                 'text',
-                'reCaptcha'
-            ], 'safe'],
-
-        ];
-        /*return [
-            [[  "id",
-                'name',
-                'contacts',
-                'theme',
-                'text',
             ], 'safe'],
          [['reCaptcha'], 'required']
-        ];*/
+        ];
 
     }
 

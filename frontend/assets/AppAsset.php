@@ -33,9 +33,9 @@ class AppAsset extends AssetBundle
         "js/scripts.min.js",
         'js/index.js',
 //        'js/smartscroll.js',
-            'js/jquery.magnific-popup.min.js',
-            'js/wow.min.js',
-            'js/script.js',
+        'js/jquery.magnific-popup.min.js',
+        'js/wow.min.js',
+        'js/script.js',
 
 
     ];
