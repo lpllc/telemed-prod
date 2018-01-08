@@ -33,7 +33,7 @@ $(document).ready(function(){
             },
             success: function (response) {
                 if($('#g-recaptcha-response').val()) {
-                    var msg = (message_language == 'ru') ? 'Ваша заявка принята.' : 'Your application is submitted.';
+                    var msg = (message_language == 'ru') ? 'Ваше сообщение отправлено.' : 'Your message has been sent.';
                     alert(msg);
                     $('.pop').magnificPopup('close');
                     $('.name').val('');

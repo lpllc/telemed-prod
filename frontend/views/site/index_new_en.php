@@ -67,6 +67,7 @@ use yii\helpers\Url;
                 Innovative platform for digital healthcare and wellness services, based on blockchain technology, AI and smart contracts
             </div>
             <a href="javascript:void(0)" class="fill"
+               onclick="ga ('send', 'event', 'Know more', 'click_know');yaCounter47098227.reachGoal('click_know');fbq('trackCustom', 'click_know');"
                data-open="modal-more">Contact us</a>
             <a href="#sale" class="empty">Join us!</a>
         </div>

@@ -133,7 +133,7 @@ use yii\helpers\Html;
                 Комплексный сервис для удаленных консультаций в сфере здоровья
             </div>
             <a href="javascript:void(0)" class="fill"
-
+               onclick="ga ('send', 'event', 'Know more', 'click_know');yaCounter47098227.reachGoal('click_know');fbq('trackCustom', 'click_know');"
                data-open="modal-more">Пишите нам</a>
             <a href="#sale" class="empty">Акция</a>
         </div>

@@ -22,7 +22,7 @@ AppAsset::register($this);
     <meta name="description" content="Сервис обеспечивает мгновенную связь с врачами, психологами, диетологами, ветеринарами и фитнес тренерами со всего мира.">
     <meta name="keywords" content="Сервис обеспечивает мгновенную связь с врачами, психологами, диетологами, ветеринарами и фитнес тренерами со всего мира.">
     <meta property="og:image" content="img/share.png">
-    <meta name="author" content="Boris Adamyan Boramos">
+
     <link rel='shortcut icon' type=image/vnd.microsoft.icon href=img/favicon.ico>
     <link rel=apple-touch-icon type=image/png href=img/favicon.ico>
     <link rel=apple-touch-icon type=image/png sizes=72x72 href=img/favicon.ico>
@@ -58,6 +58,66 @@ AppAsset::register($this);
 <script src="https://d3js.org/d3-ease.v0.5.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/segment-js/1.0.0/segment.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '394152674344854');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+               src="https://www.facebook.com/tr?id=394152674344854&ev=PageView&noscript=1"
+    /></noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+      try {
+        w.yaCounter47098227 = new Ya.Metrika({
+          id:47098227,
+          clickmap:true,
+          trackLinks:true,
+          accurateTrackBounce:true,
+          webvisor:true,
+          trackHash:true
+        });
+      } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+      s = d.createElement("script"),
+      f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+      d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+  })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/47098227" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110201705-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-110201705-2');
+</script>
+
+
 <?php
 $this->registerJs(
     "new WOW().init();
