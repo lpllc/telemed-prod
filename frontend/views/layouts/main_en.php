@@ -122,19 +122,19 @@ AppAsset::register($this);
 
 <?php
 $this->registerJs(
-    "new WOW().init();
+    "function myFunc() {
+    var x = $('#bg_popup');
+    var close_snack = $('#snackbar .close-button');
+    close_snack.on('click', function(){
+      x.css('display','none');
+    });
+    x.css('display','block');
+  }
+    new WOW().init();
     setTimeout(function(){
         myFunc();
     }, 1000);"
 );
-
-//$this->registerJs(
-//    "$.smartscroll({
-//      mode: \"set\",
-//      innerSectionScroll: false,
-//      toptotop: true
-//    });"
-//);
 $this->endBody() ?>
 </body>
 </html>

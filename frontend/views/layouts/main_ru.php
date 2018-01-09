@@ -117,22 +117,7 @@ AppAsset::register($this);
   gtag('config', 'UA-110201705-2');
 </script>
 
-
 <?php
-$this->registerJs(
-    "new WOW().init();
-    setTimeout(function(){
-        myFunc();
-    }, 1000);"
-);
-
-//$this->registerJs(
-//    "$.smartscroll({
-//      mode: \"set\",
-//      innerSectionScroll: false,
-//      toptotop: true
-//    });"
-//);
 $this->endBody() ?>
 </body>
 </html>

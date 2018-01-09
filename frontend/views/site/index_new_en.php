@@ -24,7 +24,7 @@ use yii\helpers\Url;
         </div>
         <div class="small-3 column language">
 <!--            <a href="--><?//= Url::to(['@web/site/index/ru']) ?><!--"><img src="img/flag-ru.png" alt="По-русски"></a>-->
-            <button>
+            <button class="lng_to_ru">
                 <img src="img/flag-ru.png" alt="По-русски">
             </button>
         </div>
@@ -40,10 +40,10 @@ use yii\helpers\Url;
                 </a>
             </div>
             <ul class="menu medium-12 large-7 large-offset-1 column">
-                <li><a href="#about">About Product</a></li>
-                <li><a href="#why">Why Doctor Smart </a></li>
-                <li><a class="red" href="#sale">Join us!</a></li>
-                <li><a href="#contact">Contacts</a></li>
+                <li><a class="menu-item" href="#about">About Product</a></li>
+                <li><a class="menu-item" href="#why">Why Doctor Smart </a></li>
+                <li><a class="menu-item" class="red" href="#sale">Join us!</a></li>
+                <li><a class="menu-item" href="#contact">Contacts</a></li>
                 <li><a href="http://doctorsmart.vc/" target="_blank">For Partners</a></li>
             </ul>
             <div class="small-1 medium-1 language show-for-large">
@@ -265,8 +265,9 @@ use yii\helpers\Url;
             <p>Press inquiries: <a href="mailto:pr@drs.team">pr@drs.team</a></p>
         </div>
         <div class="small-12 medium-6 columns">
-            <p>Partnership opportunities: <a href="http://doctorsmart.vc/" target="_blank">doctorsmart.vc</a></p>
-            <p>Doctor Smart Initiative for AI-based medical images recognition and analysis: <a href="http://doctorsmart.vc/" target="_blank">doctorsmart.vc</a></p>
+            <p>Product: <a href="http://doctorsmart.me/" target="_blank">doctorsmart.me</a></p>
+            <p>For Partners: <a href="http://doctorsmart.vc/" target="_blank">doctorsmart.vc</a></p>
+            <p>Initiative for AI: <a href="http://doctorsmart.vc/AI" target="_blank">doctorsmart.vc/AI</a></p>
         </div>
     </div>
 </section>
@@ -287,6 +288,6 @@ use yii\helpers\Url;
     <div id="popup" class="box-modal">
         <a  id="setCookie" class="close-button" href="#" title="Закрыть" onclick="document.getElementById('bg_popup').style.display='none'; return false;">&times;</a>
         <p class="lead">Doctor Smart uses cookies and similar technologies on its websites. By continuing your browsing after being presented with the cookie information you consent to such use.</p>
-        <a href="http://evgeny-romanchenko.com/doctorsmart/privacy.html" class="fill">More info</a>
+        <a href="<?= Url::to(["/cookie"])?>" class="fill">More info</a>
     </div>
 </div>

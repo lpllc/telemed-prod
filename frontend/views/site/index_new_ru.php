@@ -58,7 +58,7 @@ use yii\helpers\Html;
         <div class="small-3 column language">
 <!--            <a href="http://evgeny-romanchenko.com/doctorsmart/en.html"><img src="img/flag-en.png" alt="In English"></a>-->
             <button class="lng_to_en">
-                <img src="img/flag-en.png" alt="По-русски">
+                <img src="img/flag-en.png" alt="In English">
             </button>
         </div>
     </div>
@@ -102,16 +102,16 @@ use yii\helpers\Html;
                 </a>
             </div>
             <ul class="menu medium-12 large-7 large-offset-1 column">
-                <li><a href="#about">О сервисе</a></li>
-                <li><a href="#why">Почему Doctor Smart</a></li>
-                <li><a class="red" href="#sale">Акция</a></li>
-                <li><a href="#contact">Контакты</a></li>
+                <li><a class="menu-item" href="#about">О сервисе</a></li>
+                <li><a class="menu-item" href="#why">Почему Doctor Smart</a></li>
+                <li><a class="menu-item" class="red" href="#sale">Акция</a></li>
+                <li><a class="menu-item" href="#contact">Контакты</a></li>
                 <li><a href="http://doctorsmart.vc/" target="_blank">Партнерам</a></li>
             </ul>
             <div class="small-1 medium-1 language show-for-large">
-<!--                <a href="http://evgeny-romanchenko.com/doctorsmart/en.html"><img src="img/flag-en.png" alt="In English"></a>-->
+<!--                <a href="--><?//= \yii\helpers\Url::to(["/en"])?><!--"><img src="img/flag-en.png" alt="In English"></a>-->
                 <button class="lng_to_en">
-                    <img src="img/flag-en.png" alt="По-русски">
+                    <img src="img/flag-en.png" alt="In English">
                 </button>
             </div>
             <div class="social-mobile align-self-center align-self-bottom hide-for-large">
@@ -606,14 +606,13 @@ use yii\helpers\Html;
     </div>
     <div class="row">
         <div class="small-12 medium-6 columns">
-            <p>Электронная почта: <a href="mailto:info@drs.team">info@drs.team</a></p>
-            <p>Контакты пресс-службы: <a href="mailto:pr@drs.team">pr@drs.team</a></p>
+            <p>Email: <a href="mailto:info@drs.team">info@drs.team</a></p>
+            <p>Пресс-служба: <a href="mailto:pr@drs.team">pr@drs.team</a></p>
         </div>
         <div class="small-12 medium-6 columns">
-            <p>Подробная информация для наших партнеров: <a href="http://doctorsmart.vc/"
-                                                            target="_blank">doctorsmart.vc</a></p>
-            <p>Информация об инициативе Doctor Smart по использованию AI и нейронных сетей для анализа медицинских
-                изображений: <a href="http://doctorsmart.vc/" target="_blank">doctorsmart.vc</a></p>
+            <p>О продукте:: <a href="http://doctorsmart.me/" target="_blank">doctorsmart.me</a></p>
+            <p>Для партнеров: <a href="http://doctorsmart.vc/" target="_blank">doctorsmart.vc</a></p>
+            <p>Инициатива по использованию AI: <a href="http://doctorsmart.vc/AI" target="_blank">doctorsmart.vc/AI</a></p>
         </div>
     </div>
 </section>

@@ -5,7 +5,7 @@ $(document).ready(function() {
     			easing: 'ease-in-out', // CSS transition easing function
   				mainClass: 'mfp-fade'
 				});
-	$(".menu").on("click","a", function (event) {
+	$("ul .menu").on("click",".menu-item", function (event) {
         //отменяем стандартную обработку нажатия по ссылке
         event.preventDefault();
         //забираем идентификатор бока с атрибута href
@@ -79,14 +79,6 @@ $('#work .hover_section, #service .hover_section, #edviser .hover_section').on('
   }));
      }   
 });
- function myFunc() {
-		var x = $('#snackbar');
-		var close_snack = $('#snackbar span');
-		close_snack.on('click', function(){
-			x.removeClass('show')
-		})
-		x.addClass('show');
-	} 
 
 var modal = document.getElementById('myModal');
 var btn = document.getElementById('myBtn');
@@ -204,10 +196,6 @@ function send_email_2(subject){
   location.href=('mailto:' + realName + '\<'+name+sigan+domain+'\>?subject-'+subject);
 }
 
-$(document).on('click','.lng_to_ru',function(e){
-  location.href = "/ru";
-});
+$(document).on('click','ul .top-menu li',function(e){
 
-$(document).on('click','.lng_to_en',function(e){
-  location.href = "/en";
 });

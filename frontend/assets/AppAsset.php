@@ -28,14 +28,13 @@ class AppAsset extends AssetBundle
     ];
     public $js = [
 //        "js/jquery.cookie.js",
-        "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js",
         "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a468b8a10ed19f3",
         "js/scripts.min.js",
         'js/index.js',
 //        'js/smartscroll.js',
         'js/jquery.magnific-popup.min.js',
         'js/wow.min.js',
-        'js/script.js',
+        //'js/script.js',
 
 
     ];
