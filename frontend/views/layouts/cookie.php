@@ -28,7 +28,7 @@ AppAsset::register($this);
     <link rel=apple-touch-icon type=image/png sizes=114x114 href=img/logo.png>
     <link rel=icon type=image/png href=img/logo.png>
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
+    <style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
     <?= Html::csrfMetaTags() ?>
     <title>Doctor Smart - инновационная экосистема для цифровой медицины</title>
     <?php $this->head() ?>

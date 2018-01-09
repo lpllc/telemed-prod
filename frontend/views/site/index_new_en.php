@@ -239,11 +239,11 @@ use yii\helpers\Url;
 <section id="sale">
     <div class="row">
         <div class="medium-7 columns">
-            <h2>Please, join our communities on <a href="https://www.facebook.com/doctorsmart2017/">Facebook</a> and <a href="https://t.me/doctor_smart">Telegram</a>!</h2>
+            <h2>Please, join our communities on <a href="https://www.facebook.com/doctorsmart2017/" target="_blank">Facebook</a> and <a href="https://t.me/doctor_smart" target="_blank">Telegram</a>!</h2>
             <div class="sale-text">
                 <p>You could find the latest news about the development of our project there. And you will get the opportunity to be the first to receive consultations of our experts after the launch of the Doctor Smart project. The first consultation of any specialist will be provided to you free of charge.</p>
                 <p>Please, put the Likes and Share for the posts on our channels. The more Likes and Shares you put, the more chance to receive a special prize by the time the Doctor Smart project is launched.</p>
-                <p>More details will be available later in our groups on <a href="https://www.facebook.com/doctorsmart2017/">Facebook</a> and <a href="https://t.me/doctor_smart">Telegram</a></p>
+                <p>More details will be available later in our groups on <a href="https://www.facebook.com/doctorsmart2017/" target="_blank">Facebook</a> and <a href="https://t.me/doctor_smart" target="_blank">Telegram</a></p>
             </div>
         </div>
     </div>
@@ -254,8 +254,8 @@ use yii\helpers\Url;
         <div class="small-12 columns">
             <h2>Contacts</h2>
             <div class="contact-social">
-                <a href="https://www.facebook.com/doctorsmart2017/"><i class="fa fa-facebook" aria-hidden="true" onClick="ga ('send', 'event', 'FB', 'go_to_FBgroup');yaCounter47098227.reachGoal('go_to_FBgroup');"></i></a>
-                <a href="https://t.me/doctor_smart"><i class="fa fa-paper-plane" aria-hidden="true" onClick="ga ('send', 'event', 'TG', 'go_to_TGgroup');yaCounter47098227.reachGoal('go_to_TGgroup');"></i></a>
+                <a href="https://www.facebook.com/doctorsmart2017/" target="_blank"><i class="fa fa-facebook" aria-hidden="true" onClick="ga ('send', 'event', 'FB', 'go_to_FBgroup');yaCounter47098227.reachGoal('go_to_FBgroup');"></i></a>
+                <a href="https://t.me/doctor_smart" target="_blank"><i class="fa fa-paper-plane" aria-hidden="true" onClick="ga ('send', 'event', 'TG', 'go_to_TGgroup');yaCounter47098227.reachGoal('go_to_TGgroup');"></i></a>
             </div>
         </div>
     </div>
