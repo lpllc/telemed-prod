@@ -90,7 +90,7 @@ use yii\helpers\Url;
         <input type="text" name="contacts" placeholder="Your contacts" required="" class="phone contacts"><br>
         <input type="text" name="theme" placeholder="Subject" required="" class="theme"><br>
         <textarea name="text" placeholder="Message..." required="" class="message" rows="5"></textarea><br>
-        <div class="g-recaptcha" data-sitekey="6LcUuzsUAAAAABjamv96ZxkOf6nIl3FKYiOYA9XX""></div> <br>
+        <div class="g-recaptcha" data-sitekey="6LdSJEAUAAAAAGJbhgP1hXjH5lMGVfu45fwz8IzE"></div> <br>
         <button class="fill" type="submit">Send</button>
     </form>
     <button class="close-button" data-close aria-label="Close modal" type="button">

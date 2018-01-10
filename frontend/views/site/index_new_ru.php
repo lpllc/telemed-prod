@@ -161,7 +161,7 @@ use yii\helpers\Html;
         <input type="text" name="contacts" placeholder="Ваш телефон" required class="phone contacts"><br>
         <input type="text" name="theme" placeholder="Тема сообщения" required class="theme"><br>
         <textarea name="text" placeholder="Сообщение..." required class="message" rows="5"></textarea><br>
-        <div class="g-recaptcha col-lg-offset-2" data-sitekey="6LcUuzsUAAAAABjamv96ZxkOf6nIl3FKYiOYA9XX""></div>
+        <div class="g-recaptcha col-lg-offset-2" data-sitekey="6LdSJEAUAAAAAGJbhgP1hXjH5lMGVfu45fwz8IzE"></div>
         <br>
         <button class="fill send_massage_btn" type="submit">Отправить</button>
     </form>
