@@ -23,10 +23,7 @@ use yii\helpers\Url;
             </a>
         </div>
         <div class="small-3 column language">
-<!--            <a href="--><?//= Url::to(['@web/site/index/ru']) ?><!--"><img src="img/flag-ru.png" alt="По-русски"></a>-->
-            <button class="lng_to_ru">
-                <img src="img/flag-ru.png" alt="По-русски">
-            </button>
+            <a href="<?= Url::to(['/ru']) ?>"><img src="img/flag-ru.png" alt="По-русски"></a>
         </div>
     </div>
 </div>

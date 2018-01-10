@@ -64,7 +64,6 @@
     font-family: 'PF DinDisplay Pro';
     src: url('../fonts/PFDinDisplayPro-Black.eot');
     src: url('../fonts/PFDinDisplayPro-Black.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/PFDinDisplayPro-Black.woff') format('woff'),
         url('../fonts/PFDinDisplayPro-Black.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
@@ -94,7 +93,6 @@
     font-family: 'PF DinDisplay Pro';
     src: url('../fonts/PFDinDisplayPro-Bold.eot');
     src: url('../fonts/PFDinDisplayPro-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/PFDinDisplayPro-Bold.woff') format('woff'),
         url('../fonts/PFDinDisplayPro-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;

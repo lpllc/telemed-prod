@@ -56,10 +56,7 @@ use yii\helpers\Html;
             </a>
         </div>
         <div class="small-3 column language">
-<!--            <a href="http://evgeny-romanchenko.com/doctorsmart/en.html"><img src="img/flag-en.png" alt="In English"></a>-->
-            <button class="lng_to_en">
-                <img src="img/flag-en.png" alt="In English">
-            </button>
+            <a href="<?= \yii\helpers\Url::to(['/en'])?>"><img src="img/flag-en.png" alt="In English"></a>
         </div>
     </div>
 </div>
