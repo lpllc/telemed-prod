@@ -285,6 +285,6 @@ use yii\helpers\Url;
     <div id="popup" class="box-modal">
         <a  id="setCookie" class="close-button" href="#" title="Закрыть" onclick="document.getElementById('bg_popup').style.display='none'; return false;">&times;</a>
         <p class="lead">Doctor Smart uses cookies and similar technologies on its websites. By continuing your browsing after being presented with the cookie information you consent to such use.</p>
-        <a href="<?= Url::to(["/cookie"])?>" class="fill">More info</a>
+        <a href="<?= Url::to(["/cookie"])?>" class="fill more_information" target="_blank">More info</a>
     </div>
 </div>

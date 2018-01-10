@@ -17,7 +17,6 @@ AppAsset::register($this);
 <html lang="<?= Yii::$app->language ?>">
 <head>
 
-
     <meta charset="utf-8">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,6 +33,7 @@ AppAsset::register($this);
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <?= Html::csrfMetaTags() ?>
     <title> Doctor Smart is a digital healthcare system</title>
+    <?= $this->registerJsFile("js/script.en.page.js",['yii\web\JqueryAsset']); ?>
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -119,22 +119,8 @@ AppAsset::register($this);
 
   gtag('config', 'UA-110201705-2');
 </script>
-
 <?php
-$this->registerJs(
-    "function myFunc() {
-    var x = $('#bg_popup');
-    var close_snack = $('#snackbar .close-button');
-    close_snack.on('click', function(){
-      x.css('display','none');
-    });
-    x.css('display','block');
-  }
-    new WOW().init();
-    setTimeout(function(){
-        myFunc();
-    }, 1000);"
-);
+$this->registerJs("new WOW().init();");
 $this->endBody() ?>
 </body>
 </html>
