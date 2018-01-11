@@ -11,14 +11,14 @@
   font-weight: 900;
   font-style: normal;
   src: url("../fonts/pfdindisplaypro-black.eot");
-  src: url("../fonts/pfdindisplaypro-black.eot?#iefix") format("embedded-opentype"), url("../fonts/pfdindisplaypro-black.woff") format("woff"), url("../fonts/pfdindisplaypro-black.ttf") format("truetype"); }
+  src: url("../fonts/pfdindisplaypro-black.eot?#iefix") format("embedded-opentype"), url("../fonts/pfdindisplaypro-black.ttf") format("truetype"); }
 
 @font-face {
   font-family: "display-pro";
   font-weight: bold;
   font-style: normal;
   src: url("../fonts/pfdindisplaypro-bold.eot");
-  src: url("../fonts/pfdindisplaypro-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/pfdindisplaypro-bold.woff") format("woff"), url("../fonts/pfdindisplaypro-bold.ttf") format("truetype"); }
+  src: url("../fonts/pfdindisplaypro-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/pfdindisplaypro-bold.ttf") format("truetype"); }
 
 @font-face {
   font-family: "display-pro";
