@@ -13025,10 +13025,7 @@ c&&b.wrap.css("marginRight",g-c+"px")}e.not(a).each(function(){d(this).data("arc
 else{var b=a.data("arcticmodal");!1!==b.beforeClose(b,a)&&(a.trigger("beforeClose"),e.not(a).last().each(function(){d(this).data("arcticmodal").overlay.block.show()}),f.transition(b.overlay.block,"hide",1<e.length?{type:"none"}:b.closeEffect),f.transition(b.container.block,"hide",1<e.length?{type:"none"}:b.closeEffect,function(){b.afterClose(b,a);a.trigger("afterClose");b.clone||d("#arcticmodalReserve"+b.modalID).replaceWith(b.body.find(">*"));b.overlay.block.remove();b.container.block.remove();a.data("arcticmodal",
 null);d(".arcticmodal-container").length||(b.wrap.data("arcticmodalOverflow")&&b.wrap.css("overflow",b.wrap.data("arcticmodalOverflow")),b.wrap.css("marginRight",0))}),"ajax"==b.type&&b.ajax_request.abort(),e=e.not(a))}})},setDefault:function(a){d.extend(!0,g,a)}};d(function(){g.wrap=d(document.all&&!document.querySelector?"html":"body")});d(document).bind("keyup.arcticmodal",function(a){var b=e.last();b.length&&b.data("arcticmodal").closeOnEsc&&27===a.keyCode&&b.arcticmodal("close")});d.arcticmodal=
 d.fn.arcticmodal=function(a){if(h[a])return h[a].apply(this,Array.prototype.slice.call(arguments,1));if("object"===typeof a||!a)return f.init.apply(this,arguments);d.error("jquery.arcticmodal: Method "+a+" does not exist")}})(jQuery);
-
 $(function() {
-
-	$("#mobile-menu").css("display", "block");
 
 	/*Hamburger menu*/
 	$(document).foundation();
@@ -13042,43 +13039,90 @@ $(function() {
 	}
 	var header = new Headhesive('#top-menu', options);
 
-	/*Smooth scroll*/
-	$(document).ready(function(){
-	 	var offset = window.matchMedia('(max-width: 1024px)');
-	 	if (offset.matches) {
-		$(".menu a, .top-bar-left a, .logo, .fixbut").mPageScroll2id({
-			offset: 80
-		});
-		} else {
-			$(".menu a, .top-bar-left a, .logo, .fixbut, .utp a").mPageScroll2id({
-			offset: 76
-		});
-		}
+ /*Smooth scroll*/
+ $(document).ready(function(){
+ 	var offset = window.matchMedia('(max-width: 1024px)');
+ 	if (offset.matches) {
+	$(".menu a, .top-bar-left a, .logo, .fixbut").mPageScroll2id({
+		offset: 80
 	});
+	} else {
+		$(".menu a, .top-bar-left a, .logo, .fixbut, .utp a").mPageScroll2id({
+		offset: 76
+	});
+	}
+});
 
-	/*Scroll on mobile*/
-	$(window).resize(function(){
-		var size = window.matchMedia('(max-width: 1024px)');
-	if (size.matches) {
-	    $(".menu a, .logo").click(function() {
-			//$(".top-bar").css("display", "none");
+	/*Scroll on modile*/
+$(window).resize(function(){
+	var size = window.matchMedia('(max-width: 1024px)');
+if (size.matches) {
+    $(".menu a, .logo").click(function() {
+			$(".top-bar").css("display", "none");
 			$(".hamburger").removeClass("is-active");
 		});
-	} else {
-	   $(".menu a, .logo").click(function() {
+} else {
+   $(".menu a, .logo").click(function() {
 			$(".top-bar").css("display", "flex");
-			});
-		}
-	});
+		});
+}
+});
 
 	/*Top*/
+
 	$(window).scroll(function() {
-	  	if ($(this).scrollTop() > $(this).height()) {
-	  		$('.top').addClass('active');
-	  	} else {
-	  		$('.top').removeClass('active');
-	  	}
-	});
+  	if ($(this).scrollTop() > $(this).height()) {
+  		$('.top').addClass('active');
+  	} else {
+  		$('.top').removeClass('active');
+  	}
+  });
+/*
+  $('.top').click(function() {
+  	$('html, body').stop().animate({scrollTop: 0}, 'slow', 'swing');
+  });
+*/
+
+	//E-mail Ajax Send
+	/*$("form.more").submit(function() {
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: th.serialize()
+		}).done(function() {
+			$('#modal-more').foundation('close');
+			setTimeout(function() {
+				$("form.more").trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});*/
+
+	/*Cookie*/
+/*	$(document).ready(function(){
+		$('#setCookie').click(function () {
+			$.cookie('popup', 'true', {expires: 365} );
+			$("#bg_popup").hide();
+		});
+
+		if ( $.cookie('popup') == null )
+		{
+			setTimeout(function(){
+				$('#bg_popup').show();
+			})
+		}
+		else { $('#bg_popup').hide();
+	}
+});*/
+
+  $(document).on('click', '.lng_to_ru', function(e) {
+    location.href = '/ru';
+  });
+
+  $(document).on('click', '.lng_to_en', function(e) {
+    location.href = '/en';
+  });
   $(document).on('click', '#top-menu .menu li>a', function(e) {
     var width = $(window).width();
     console.log(width);

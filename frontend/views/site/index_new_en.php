@@ -8,7 +8,7 @@ use yii\helpers\Url;
 <!-- End Google Tag Manager (noscript) -->
 
 
-<div class="row">
+<div class="row" id="mobile-menu">
     <div class="title-bar column" data-responsive-toggle="top-menu" data-hide-for="large">
         <div class="small-3 column burger">
             <button class="hamburger hamburger--spring" type="button" data-toggle="top-menu">
@@ -89,7 +89,7 @@ use yii\helpers\Url;
         <input type="text" name="name" placeholder="Your name" required="" class="name"><br>
         <input type="text" name="contacts" placeholder="Your contacts" required="" class="phone contacts"><br>
         <input type="text" name="theme" placeholder="Subject" required="" class="theme"><br>
-        <textarea name="text" placeholder="Message..." required="" class="message" rows="5"></textarea><br>
+        <textarea name="text" placeholder="Message..." required="" class="message" rows="3"></textarea><br>
         <div class="g-recaptcha" data-sitekey="6LdSJEAUAAAAAGJbhgP1hXjH5lMGVfu45fwz8IzE"></div> <br>
         <button class="fill" type="submit">Send</button>
     </form>

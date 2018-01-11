@@ -12,7 +12,7 @@ use yii\helpers\Html;
 <!-- End Google Tag Manager (noscript) -->
 
 
-<div class="row">
+<div class="row" id="mobile-menu">
     <div class="title-bar column" data-responsive-toggle="top-menu" data-hide-for="large">
         <div class="small-3 column burger">
             <button class="hamburger hamburger--spring" type="button" data-toggle="top-menu">
@@ -160,7 +160,7 @@ use yii\helpers\Html;
         <input type="text" name="name" placeholder="Ваше имя" required class="name"><br>
         <input type="text" name="contacts" placeholder="Ваш телефон" required class="phone contacts"><br>
         <input type="text" name="theme" placeholder="Тема сообщения" required class="theme"><br>
-        <textarea name="text" placeholder="Сообщение..." required class="message" rows="5"></textarea><br>
+        <textarea name="text" placeholder="Сообщение..." required class="message" rows="3"></textarea><br>
         <div class="g-recaptcha col-lg-offset-2" data-sitekey="6LdSJEAUAAAAAGJbhgP1hXjH5lMGVfu45fwz8IzE"></div>
         <br>
         <button class="fill send_massage_btn" type="submit">Отправить</button>
