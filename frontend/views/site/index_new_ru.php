@@ -106,10 +106,7 @@ use yii\helpers\Html;
                 <li><a href="http://doctorsmart.vc/" target="_blank">Партнерам</a></li>
             </ul>
             <div class="small-1 medium-1 language show-for-large">
-<!--                <a href="--><?//= \yii\helpers\Url::to(["/en"])?><!--"><img src="img/flag-en.png" alt="In English"></a>-->
-                <button class="lng_to_en">
-                    <img src="img/flag-en.png" alt="In English">
-                </button>
+                <a href="<?= \yii\helpers\Url::to(["/en"])?>"><img src="img/flag-en.png" alt="In English"></a>
             </div>
             <div class="social-mobile align-self-center align-self-bottom hide-for-large">
                 <a class="fb" href="https://www.facebook.com/doctorsmart2017/"><i class="fa fa-facebook"

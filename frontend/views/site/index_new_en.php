@@ -44,10 +44,10 @@ use yii\helpers\Url;
                 <li><a href="http://doctorsmart.vc/" target="_blank">For Partners</a></li>
             </ul>
             <div class="small-1 medium-1 language show-for-large">
-
-                <button class="lng_to_ru">
+                <a href="<?= Url::to(['/ru']) ?>"><img src="img/flag-ru.png" alt="По-русски"></a>
+                <!--<button class="lng_to_ru">
                     <img src="img/flag-ru.png" alt="По-русски">
-                </button>
+                </button>-->
             </div>
             <div class="social-mobile align-self-center align-self-bottom hide-for-large">
                 <a class="fb" href="https://www.facebook.com/doctorsmart2017/"><i class="fa fa-facebook" aria-hidden="true" onClick="ga ('send', 'event', 'FB', 'go_to_FBgroup');yaCounter47098227.reachGoal('go_to_FBgroup');"></i></a>
