@@ -5,10 +5,10 @@ use yii\helpers\Html;
 ?>
 
 <!-- Google Tag Manager (noscript) -->
-<noscript>
+<!--<noscript>
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KF2ZW54"
             height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
+</noscript>-->
 <!-- End Google Tag Manager (noscript) -->
 
 

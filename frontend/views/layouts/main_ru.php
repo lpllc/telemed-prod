@@ -35,11 +35,11 @@ AppAsset::register($this);
     <title>Doctor Smart платформа для консультаций в сфере здоровья</title>
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    <!--<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-TDJ44T8');</script>
+        })(window,document,'script','dataLayer','GTM-TDJ44T8');</script>-->
     <!-- End Google Tag Manager -->
 
     <?php $this->head() ?>
@@ -47,8 +47,8 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDJ44T8"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!--<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDJ44T8"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>-->
 <!-- End Google Tag Manager (noscript) -->
 
     <?= $content ?>
@@ -71,10 +71,7 @@ AppAsset::register($this);
   fbq('init', '394152674344854');
   fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-               src="https://www.facebook.com/tr?id=394152674344854&ev=PageView&noscript=1"
-    /></noscript>
-<!-- End Facebook Pixel Code -->
+
 
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
@@ -104,8 +101,7 @@ AppAsset::register($this);
     } else { f(); }
   })(document, window, "yandex_metrika_callbacks");
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/47098227" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110201705-2"></script>
@@ -119,6 +115,13 @@ AppAsset::register($this);
 
 <?php
 $this->endBody() ?>
+<noscript><img height="1" width="1" style="display:none"
+               src="https://www.facebook.com/tr?id=394152674344854&ev=PageView&noscript=1"
+    /></noscript>
+<!-- End Facebook Pixel Code -->
+
+<noscript><div><img src="https://mc.yandex.ru/watch/47098227" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 </body>
 </html>
 <?php $this->endPage() ?>
