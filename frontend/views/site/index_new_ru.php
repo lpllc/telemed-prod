@@ -56,7 +56,28 @@ use yii\helpers\Html;
             </a>
         </div>
         <div class="small-3 column language">
-            <a href="<?= \yii\helpers\Url::to(['/en'])?>"><img src="img/flag-en.png" alt="In English"></a>
+<!--            <a href="--><?//= \yii\helpers\Url::to(['/en'])?><!--"><img src="img/flag-en.png" alt="In English"></a>-->
+            <div class="dropdown">
+                <?php
+                if($user_language == 'ru') {?>
+                    <a href="javascript:void(0);" class="lang dropdown-toggle" data-toggle="dropdown"><span class="display_lang"><img src="img/ru.png" class="" alt="Russian" /></span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <?php }?>
+
+                <?php
+                if($user_language == 'en') {?>
+                    <a href="javascript:void(0)" class="lang dropdown-toggle" data-toggle="dropdown"><span class="display_lang"><img src="img/en.png" class="" alt="Usa" /></span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <?php }?>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <?php if($user_language == 'ru') { ?>
+                        <li><a href="/en"><img src="img/en.png" class="" alt="Usa" /></a></li>
+                        </span>
+                    <?php } ?>
+                    <?php if($user_language == 'en') { ?>
+                        <li><a href="/ru"><img src="img/ru.png" class="" alt="Russian" /></a></li>
+                        </span>
+                    <?php } ?>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -106,7 +127,28 @@ use yii\helpers\Html;
                 <li><a href="http://doctorsmart.vc/" target="_blank">Партнерам</a></li>
             </ul>
             <div class="small-1 medium-1 language show-for-large">
-                <a href="<?= \yii\helpers\Url::to(["/en"])?>"><img src="img/flag-en.png" alt="In English"></a>
+<!--                <a href="--><?//= \yii\helpers\Url::to(["/en"])?><!--"><img src="img/flag-en.png" alt="In English"></a>-->
+                <div class="dropdown">
+                    <?php
+                    if($user_language == 'ru') {?>
+                    <a href="javascript:void(0);" class="lang dropdown-toggle" data-toggle="dropdown"><span class="display_lang"><img src="img/ru.png" class="" alt="Russian" /></span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <?php }?>
+
+                    <?php
+                    if($user_language == 'en') {?>
+                        <a href="javascript:void(0)" class="lang dropdown-toggle" data-toggle="dropdown"><span class="display_lang"><img src="img/en.png" class="" alt="Usa" /></span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <?php }?>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <?php if($user_language == 'ru') { ?>
+                            <li><a href="/en"><img src="img/en.png" class="" alt="Usa" /></a></li>
+                            </span>
+                        <?php } ?>
+                        <?php if($user_language == 'en') { ?>
+                            <li><a href="/ru"><img src="img/ru.png" class="" alt="Russian" /></a></li>
+                            </span>
+                        <?php } ?>
+                    </ul>
+                </div>
             </div>
             <div class="social-mobile align-self-center align-self-bottom hide-for-large">
                 <a class="fb" href="https://www.facebook.com/doctorsmart2017/"><i class="fa fa-facebook"

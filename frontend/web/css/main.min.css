@@ -12916,7 +12916,7 @@ input#checkbox {
     padding: 0 11px; }
   /*Header*/
   header .nav ul li a {
-    padding: 0 11px; }
+    padding: 0 10px; }
   header .language {
     padding-left: 0px; }
   /* 5 screen */
@@ -13335,3 +13335,121 @@ hide-email::before {
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
   /**/ }
+
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+#top-menu .dropdown i.fa-angle-down {
+  font-weight: 700;
+  font-size: 16px;
+  margin-left: 15px;
+  position: absolute;
+  top: 14px;
+  right: 34px;
+  color: #25629f;
+}
+#top-menu .dropdown.open i.fa-angle-down{
+  transform: rotate(180deg);
+}
+#top-menu .dropdown ul>li a {
+  line-height: 0px;
+}
+
+#top-menu .dropdown ul>li a:hover,
+#top-menu .dropdown ul>li a:focus {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+.dropdown-menu.dropdown-menu-right {
+  background-color: #bbbbbba1;
+}
+.dropdown-menu-right {
+  right: 5px;
+  width: 46px;
+}
+
+.dropdown-menu {
+  left: 5px;
+  min-width: inherit;
+}
+
+#top-menu .dropdown ul>li a {
+  padding: 0 10px;
+}
+}
+
+
+@media screen and (max-width: 1200px) {
+  .dropdown-menu-right {
+    right: 32px;
+    left: 6px;
+  }
+
+  .dropdown-menu-right li a img {
+      height: 16px;
+      width: 24px;
+    }
+
+  #top-menu .dropdown ul>li a {
+    padding: 0 10px;
+  }
+}
+
+
+
+@media screen and (max-width: 1100px) {
+  .dropdown-menu {
+    left: 6px;
+  }
+
+  .dropdown-menu-right {
+    right: 38px;
+  }
+
+  .dropdown .display_lang {
+    display: inline-block;
+    margin-right: 4px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .dropdown {
+    text-align: right;
+    float: right;
+    width: 42px;
+  }
+
+  .dropdown-menu {
+    padding: 8px 0;
+    left: -7px;
+  }
+
+  .dropdown-menu-right {
+    right: 1px;
+  }
+
+  .dropdown-menu > li > a {
+    padding: 0 10px;
+  }
+
+  .dropdown-menu > li > a img {
+    height: 16px;
+    width: 24px;
+    float: none;
+  }
+
+  .dropdown i.fa-angle-down {
+    color: #25629f;
+    font-size: 16px;
+    font-weight: 700;
+    top: -1px;
+    position: relative;
+  }
+
+  .dropdown.open i.fa-angle-down {
+    transform: rotate(180deg);
+  }
+
+}

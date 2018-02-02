@@ -23,7 +23,28 @@ use yii\helpers\Url;
             </a>
         </div>
         <div class="small-3 column language">
-            <a href="<?= Url::to(['/ru']) ?>"><img src="img/flag-ru.png" alt="По-русски"></a>
+<!--            <a href="--><?//= Url::to(['/ru']) ?><!--"><img src="img/flag-ru.png" alt="По-русски"></a>-->
+            <div class="dropdown">
+                <?php
+                if($user_language == 'ru') {?>
+                    <a href="javascript:void(0);" class="lang dropdown-toggle" data-toggle="dropdown"><span class="display_lang"><img src="img/ru.png" class="" alt="Russian" /></span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <?php }?>
+
+                <?php
+                if($user_language == 'en') {?>
+                    <a href="javascript:void(0)" class="lang dropdown-toggle" data-toggle="dropdown"><span class="display_lang"><img src="img/en.png" class="" alt="Usa" /></span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <?php }?>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <?php if($user_language == 'ru') { ?>
+                        <li><a href="/en"><img src="img/en.png" class="" alt="Usa" /></a></li>
+                        </span>
+                    <?php } ?>
+                    <?php if($user_language == 'en') { ?>
+                        <li><a href="/ru"><img src="img/ru.png" class="" alt="Russian" /></a></li>
+                        </span>
+                    <?php } ?>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -44,10 +65,28 @@ use yii\helpers\Url;
                 <li><a href="http://doctorsmart.vc/" target="_blank">For Partners</a></li>
             </ul>
             <div class="small-1 medium-1 language show-for-large">
-                <a href="<?= Url::to(['/ru']) ?>"><img src="img/flag-ru.png" alt="По-русски"></a>
-                <!--<button class="lng_to_ru">
-                    <img src="img/flag-ru.png" alt="По-русски">
-                </button>-->
+<!--                <a href="--><?//= Url::to(['/ru']) ?><!--"><img src="img/flag-ru.png" alt="По-русски"></a>-->
+                <div class="dropdown">
+                    <?php
+                    if($user_language == 'ru') {?>
+                        <a href="javascript:void(0);" class="lang dropdown-toggle" data-toggle="dropdown"><span class="display_lang"><img src="img/ru.png" class="" alt="Russian" /></span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <?php }?>
+
+                    <?php
+                    if($user_language == 'en') {?>
+                        <a href="javascript:void(0)" class="lang dropdown-toggle" data-toggle="dropdown"><span class="display_lang"><img src="img/en.png" class="" alt="Usa" /></span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <?php }?>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <?php if($user_language == 'ru') { ?>
+                            <li><a href="/en"><img src="img/en.png" class="" alt="Usa" /></a></li>
+                            </span>
+                        <?php } ?>
+                        <?php if($user_language == 'en') { ?>
+                            <li><a href="/ru"><img src="img/ru.png" class="" alt="Russian" /></a></li>
+                            </span>
+                        <?php } ?>
+                    </ul>
+                </div>
             </div>
             <div class="social-mobile align-self-center align-self-bottom hide-for-large">
                 <a class="fb" href="https://www.facebook.com/doctorsmart2017/"><i class="fa fa-facebook" aria-hidden="true" onClick="ga ('send', 'event', 'FB', 'go_to_FBgroup');yaCounter47098227.reachGoal('go_to_FBgroup');"></i></a>
