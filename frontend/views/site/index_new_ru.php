@@ -151,7 +151,7 @@ use yii\helpers\Html;
                 </div>
             </div>
             <div class="social-mobile align-self-center align-self-bottom hide-for-large">
-                <a class="fb" href="https://www.facebook.com/doctorsmart2017/"><i class="fa fa-facebook"
+                <a class="fb" href="https://www.facebook.com/DoctorSmartRus/"><i class="fa fa-facebook"
                                                                                   aria-hidden="true"
                                                                                   onClick="ga ('send', 'event', 'FB', 'go_to_FBgroup');yaCounter47098227.reachGoal('go_to_FBgroup');"></i></a>
                 <a class="vk" href="https://vk.com/public158761825"><i class="fa fa-vk" aria-hidden="true"
@@ -175,7 +175,7 @@ use yii\helpers\Html;
         </div>
     </div>
     <div class="social">
-        <a href="https://www.facebook.com/doctorsmart2017/"><i class="fa fa-facebook" aria-hidden="true"
+        <a href="https://www.facebook.com/DoctorSmartRus/"><i class="fa fa-facebook" aria-hidden="true"
                                                                onClick="ga ('send', 'event', 'FB', 'go_to_FBgroup');yaCounter47098227.reachGoal('go_to_FBgroup');"></i></a>
         <a class="vk" href="https://vk.com/public158761825"><i class="fa fa-vk" aria-hidden="true"
                                                                onClick="ga ('send', 'event', 'VK', 'go_to_VKgroup');yaCounter47098227.reachGoal('go_to_VKgroup');"></i></a>
@@ -609,7 +609,7 @@ use yii\helpers\Html;
 <section id="sale">
     <div class="row">
         <div class="medium-7 columns">
-            <h2>Присоединяйтесь к нашим сообществам на <a href="https://www.facebook.com/doctorsmart2017/" target="_blank">Facebook</a>,
+            <h2>Присоединяйтесь к нашим сообществам на <a href="https://www.facebook.com/DoctorSmartRus/" target="_blank">Facebook</a>,
                 <a href="https://vk.com/public158761825" target="_blank">ВКонтакте</a> и <a
                         href="https://t.me/doctor_smart" target="_blank">Telegram</a></h2>
             <div class="sale-text">
@@ -618,7 +618,7 @@ use yii\helpers\Html;
                     специалиста будет оказана вам бесплатно.</p>
                 <p>Не забывайте ставить лайки и делиться новостями на наших каналах. Чем больше лайков вы поставите, тем
                     выше будет ваш шанс получить специальный приз к моменту запуска проекта Doctor Smart.</p>
-                <p>Следите за подробностями акции в наших группах в <a href="https://www.facebook.com/doctorsmart2017/" target="_blank">Facebook</a>,
+                <p>Следите за подробностями акции в наших группах в <a href="https://www.facebook.com/DoctorSmartRus/" target="_blank">Facebook</a>,
                     <a href="https://vk.com/public158761825" target="_blank">ВКонтакте</a> и <a href="https://t.me/doctor_smart" target="_blank">Telegram</a>
                 </p>
             </div>
@@ -631,7 +631,7 @@ use yii\helpers\Html;
         <div class="small-12 columns">
             <h2>Контакты</h2>
             <div class="contact-social">
-                <a href="https://www.facebook.com/doctorsmart2017/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"
+                <a href="https://www.facebook.com/DoctorSmartRus/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"
                                                                        onClick="ga ('send', 'event', 'FB', 'go_to_FBgroup');yaCounter47098227.reachGoal('go_to_FBgroup');"></i></a>
                 <a class="vk" href="https://vk.com/public158761825" target="_blank"><i class="fa fa-vk" aria-hidden="true"
                                                                        onClick="ga ('send', 'event', 'VK', 'go_to_VKgroup');yaCounter47098227.reachGoal('go_to_VKgroup');"></i></a>
@@ -648,7 +648,7 @@ use yii\helpers\Html;
         <div class="small-12 medium-6 columns">
             <p>О продукте:: <a href="http://doctorsmart.me/" target="_blank">doctorsmart.me</a></p>
             <p>Для партнеров: <a href="http://doctorsmart.vc/" target="_blank">doctorsmart.vc</a></p>
-            <p>Инициатива по использованию AI: <a href="http://doctorsmart.vc/AI" target="_blank">doctorsmart.vc/AI</a></p>
+<!--            <p>Инициатива по использованию AI: <a href="http://doctorsmart.vc/AI" target="_blank">doctorsmart.vc/AI</a></p>-->
         </div>
     </div>
 </section>
